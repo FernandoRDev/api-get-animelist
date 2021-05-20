@@ -8,6 +8,7 @@ const url = "https://myanimelist.net/anime.php";
 app.get('/genres', (req, res) => {
     axios.get(url).then(response => {
 
+        const date = new Date().getTime()
         const q = req.query.q
         const root = parser(response.data)
         const arr = root.querySelectorAll(".genre-link")[0].querySelectorAll(".genre-name-link");
@@ -20,7 +21,8 @@ app.get('/genres', (req, res) => {
 
                 category: texto.split('(')[0].trim(),
                 amount: texto.split('(')[1].split(')')[0],
-                link: "https://myanimelist.net" + t._attrs.href
+                link: "https://myanimelist.net" + t._attrs.href,
+                timestamp: date
             }
 
             if (q != undefined) {
@@ -38,6 +40,7 @@ app.get('/genres', (req, res) => {
 app.get('/studios', (req, res) => {
     axios.get(url).then(response => {
 
+        const date = new Date().getTime()
         const q = req.query.q
         const root = parser(response.data)
         const arr = root.querySelectorAll(".genre-link")[1].querySelectorAll(".genre-name-link");
@@ -49,7 +52,8 @@ app.get('/studios', (req, res) => {
 
                 category: texto.split('(')[0].trim(),
                 amount: texto.split('(')[1].split(')')[0],
-                link: "https://myanimelist.net" + t._attrs.href
+                link: "https://myanimelist.net" + t._attrs.href,
+                timestamp: date
             }
 
             if (q != undefined) {
