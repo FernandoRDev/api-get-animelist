@@ -11,7 +11,7 @@ string q = query string para filtrar no campo title
 Bibliotecas  
 1. express como servidor http  
 2. axios para realizar requests http 
-3.node-html-parser para dar um parse
+3. node-html-parser para dar um parse
 ##
 
 objeto de retorno  (http://localhost:8080/api/genres?q=Adventure)
