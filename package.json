@@ -1,0 +1,26 @@
+{
+  "name": "api-animelist",
+  "version": "1.0.0",
+  "description": "get gerens and studios from animelist",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "node-html-parser": "^3.3.6",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoRDev/apiPPW2.git"
+  },
+  "author": "Fernando Rodrigues Jr.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoRDev/apiPPW2/issues"
+  },
+  "homepage": "https://github.com/FernandoRDev/apiPPW2#readme"
+}
