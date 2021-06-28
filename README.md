@@ -1,4 +1,4 @@
-# projeto-intermediario
+# Get genres and studios from MyAnimiList
 
 end points
 1. api/genres
@@ -14,7 +14,7 @@ Bibliotecas
 3. node-html-parser para dar um parse
 ##
 
-objeto de retorno  (http://localhost:8080/api/genres?q=Adventure)
+objeto de retorno  (https://api-get-animelist-ppw2.herokuapp.com/api/genres?q=Adventure)
 ```javascript
 [
   {
@@ -30,7 +30,7 @@ amount = Quantidade de titulos na categoria
 link = Endereço do Rescurso  
 timestamp = Timestamp
 ##
-objeto de retorno  (http://localhost:8080/api/studios?q=Toei)
+objeto de retorno  (https://api-get-animelist-ppw2.herokuapp.com/api/studios?q=Toei)
 ```javascript
 [
   {
