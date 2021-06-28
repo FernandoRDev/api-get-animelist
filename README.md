@@ -1,8 +1,8 @@
 # projeto-intermediario
 
 end points
-1. /genres
-2. /studios
+1. api/genres
+2. api/studios
 
 parametros em ambos  
 string q = query string para filtrar no campo title 
@@ -14,7 +14,7 @@ Bibliotecas
 3.node-html-parser para dar um parse
 ##
 
-objeto de retorno  (http://localhost:3000/genres?q=Adventure)
+objeto de retorno  (http://localhost:8080/api/genres?q=Adventure)
 ```javascript
 [
   {
@@ -30,7 +30,7 @@ amount = Quantidade de titulos na categoria
 link = Endereço do Rescurso  
 timestamp = Timestamp
 ##
-objeto de retorno  (http://localhost:3000/studios?q=Toei)
+objeto de retorno  (http://localhost:8080/api/studios?q=Toei)
 ```javascript
 [
   {
